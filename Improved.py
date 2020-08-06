@@ -28,6 +28,7 @@ def cleanData(training, testing):
     testing['Work Experience in Current Job [years]'] = testing['Work Experience in Current Job [years]'].replace({'#NUM!':training['Work Experience in Current Job [years]'].mode()})
 
     training['Gender'] = training['Gender'].replace({'f':'female'})
+    
     #training['Gender'] = training['Gender'].replace({'0':'other'})
     #training['Gender'] = training['Gender'].replace({'unknow':'other'})
     #testing['Gender'] = testing['Gender'].replace({'0':'other'})
@@ -40,6 +41,7 @@ def cleanData(training, testing):
     #testing['Hair Color'] = testing['Hair Color'].replace({'Unknown':'Other'})
     #training['Housing Situation'] = training['Housing Situation'].replace({'nA':training['Satisfaction with employer'].mode()})
     #testing['Housing Situation'] = testing['Housing Situation'].replace({'nA': training['Satisfaction with employer'].mode()})
+    
     training['Yearly Income in addition to Salary (e.g. Rental Income)'] = training['Yearly Income in addition to Salary (e.g. Rental Income)'].str.strip('EUR')
     testing['Yearly Income in addition to Salary (e.g. Rental Income)'] = testing['Yearly Income in addition to Salary (e.g. Rental Income)'].str.strip('EUR')
     
