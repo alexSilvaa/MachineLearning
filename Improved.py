@@ -30,7 +30,6 @@ def cleanData(training, testing):
     training['Gender'] = training['Gender'].replace({'f':'female'})
     #training['Gender'] = training['Gender'].replace({'0':'other'})
     #training['Gender'] = training['Gender'].replace({'unknow':'other'})
-    testing['Gender'] = testing['Gender'].replace({'f':'female'})
     #testing['Gender'] = testing['Gender'].replace({'0':'other'})
     #testing['Gender'] = testing['Gender'].replace({'unknow':'other'})
     #training['University Degree'] = training['University Degree'].replace({'0':'No'})
